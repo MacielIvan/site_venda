@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="../../style/style-cardapio.css">
+    <link rel="icon" href="../../image/diferencas.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="./sobre.html">Sobre</a>
+        <a href="./servico.html">Serviços</a>
+        <a href="./contato.html">Contato</a>
+        <a href="./cardapio.html">Cárdapio</a>
+        <a href="../admin/admin.html">Admin</a>
+    </div>
+
+    <div class="content" style="align-items:center;">
+        <h2>Cardápio do Dia</h2>
+        <img id="menuImage" class="responsive-img" src="" alt="Cardápio do Dia">
+        <!---<button id="backToHome">Voltar ao Inicio</button>--->
+    </div>
+    <div class="content">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Escreva aqui seu Nome">
+            <label for="phone">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Escreva aqui seu endereço"/>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required placeholder="Escreva aqui"></textarea>
+
+            <h3>Selecione suas opções:</h3>
+            <div class="option">
+                <label><input type="checkbox" id="option1" name="options" value="Opção 1"> Opção 1</label>
+                <input type="number" id="quantity1" name="quantity1" min="1" placeholder="Quantidade">
+            </div>
+            <div class="option">
+                <label><input type="checkbox" id="option2" name="options" value="Opção 2"> Opção 2</label>
+                <input type="number" id="quantity2" name="quantity2" min="1" placeholder="Quantidade">
+            </div>
+            <div class="option">
+                <label><input type="checkbox" id="option3" name="options" value="Opção 3"> Opção 3</label>
+                <input type="number" id="quantity3" name="quantity3" min="1" placeholder="Quantidade">
+            </div>
+
+            <button type="submit">Enviar</button>
+            <button type="reset" id="backToHome">Voltar</button>
+        </form>
+    </div>
+    <script src="../../src/contato.js"></script>
+    </body>
+</html>
