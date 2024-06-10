@@ -133,12 +133,15 @@ input[type=checkbox] {
     margin: 0px 15px;
   }
 
+  /*Mudando a imagem*/
 .responsive-img {
-    max-width: 100%;
-    height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 20px;
 }
 
 @media(min-width:700px){
